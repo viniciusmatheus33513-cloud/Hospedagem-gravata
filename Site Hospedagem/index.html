@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hospedagem Gravatá</title>
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      color:#fff;
+      background: url('https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=1974&auto=format&fit=crop') no-repeat center center fixed;
+      background-size: cover;
+      position: relative;
+    }
+
+    body::before {
+      content:"";
+      position:absolute;
+      top:0; left:0;
+      width:100%; height:100%;
+      background: rgba(0,0,0,0.55);
+      backdrop-filter: blur(4px);
+      z-index:-1;
+    }
+
+    header {
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      padding:20px 40px;
+      background: rgba(0,0,0,0.6);
+    }
+
+    .logo {
+      display:flex;
+      align-items:center;
+      gap:10px;
+    }
+
+    .logo img {
+      width:50px;
+      height:50px;
+      border-radius:50%;
+      object-fit:cover;
+      background:#fff;
+      padding:3px;
+    }
+
+    .logo h1 {
+      font-size:20px;
+      font-weight:bold;
+    }
+
+    .whatsapp-btn {
+      background:#25D366;
+      padding:10px 18px;
+      border-radius:8px;
+      text-decoration:none;
+      color:#fff;
+      font-weight:bold;
+      transition:0.3s;
+    }
+
+    .whatsapp-btn:hover { background:#1ebe5d; }
+
+    .hero {
+      text-align:center;
+      padding:120px 20px 80px;
+    }
+
+    .hero h2 {
+      font-size:38px;
+      margin-bottom:20px;
+    }
+
+    .hero p {
+      font-size:18px;
+      max-width:700px;
+      margin:0 auto 30px;
+    }
+
+    .section {
+      padding:60px 20px;
+      text-align:center;
+    }
+
+    .section h3 {
+      font-size:28px;
+      margin-bottom:40px;
+    }
+
+    .services {
+      display:flex;
+      justify-content:center;
+      flex-wrap:wrap;
+      gap:20px;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.9);
+      color:#333;
+      padding:25px;
+      border-radius:12px;
+      width:250px;
+      box-shadow:0 8px 20px rgba(0,0,0,0.2);
+    }
+
+    .card h4 {
+      margin-bottom:10px;
+      color:#2e7d32;
+    }
+
+    .cta {
+      padding:80px 20px;
+      text-align:center;
+      background: rgba(0,0,0,0.65);
+    }
+
+    .cta h3 {
+      font-size:28px;
+      margin-bottom:15px;
+    }
+
+    .cta p {
+      margin-bottom:25px;
+      font-size:17px;
+    }
+
+    .cta a {
+      background:#25D366;
+      padding:14px 25px;
+      border-radius:10px;
+      color:#fff;
+      text-decoration:none;
+      font-weight:bold;
+      font-size:16px;
+    }
+
+    footer {
+      text-align:center;
+      padding:20px;
+      background: rgba(0,0,0,0.7);
+      font-size:14px;
+    }
+
+    @media(max-width:768px){
+      .hero h2 { font-size:28px; }
+      .services { flex-direction:column; align-items:center; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <img src="logo.png" alt="Logo Hospedagem Gravatá">
+      <h1>Hospedagem Gravatá</h1>
+    </div>
+    <a class="whatsapp-btn" href="https://wa.me/5581983633788" target="_blank">Atendimento rápido pelo WhatsApp</a>
+  </header>
+
+  <section class="hero">
+    <h2>Encontre a melhor hospedagem em Gravatá - PE</h2>
+    <p>Trabalhamos com as melhores pousadas, chalés e hotéis da região para garantir conforto, segurança e uma experiência incrível na sua viagem.</p>
+  </section>
+
+  <section class="section">
+    <h3>Nossos Serviços</h3>
+    <div class="services">
+      <div class="card">
+        <h4>Pousadas</h4>
+        <p>Opções aconchegantes para casal ou família.</p>
+      </div>
+      <div class="card">
+        <h4>Chalés</h4>
+        <p>Conforto e privacidade em meio à natureza.</p>
+      </div>
+      <div class="card">
+        <h4>Hotéis</h4>
+        <p>Estrutura completa para sua estadia perfeita.</p>
+      </div>
+      <div class="card">
+        <h4>Passeio de Quadriciclo + Banho de Cachoeira</h4>
+        <p>Aventura e natureza para deixar sua viagem ainda mais especial.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <h3>Precisa de ajuda para reservar?</h3>
+    <p>Fale conosco agora mesmo pelo WhatsApp e receba atendimento rápido.</p>
+    <a href="https://wa.me/5581983633788" target="_blank">Quero fazer minha reserva</a>
+  </section>
+
+  <footer>
+    © 2026 Hospedagem Gravatá - Todos os direitos reservados
+  </footer>
+
+
+
+<!-- AVALIAÇÕES -->
+<section style="padding:70px 20px; background:#111; text-align:center;">
+  <h2 style="color:white; margin-bottom:10px; font-size:32px;">Avaliações de Clientes</h2>
+  <p style="color:#00d084; font-size:20px; margin-bottom:50px;">⭐ Nota média 4.9/5 - Mais de 120 reservas realizadas</p>
+  
+  <div style="display:flex; flex-wrap:wrap; gap:30px; justify-content:center;">
+
+    <div style="background:#1c1c1c; padding:25px; border-radius:15px; width:320px; color:white; text-align:left; transition:0.3s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+      <div style="display:flex; align-items:center; gap:15px; margin-bottom:15px;">
+        <img src="https://randomuser.me/api/portraits/women/45.jpg" 
+             style="width:55px; height:55px; border-radius:50%; object-fit:cover;" 
+             alt="Cliente Maria">
+        <div>
+          <strong>Maria Silva</strong> <span style="color:#00d084; font-size:13px;">✔ Verificado</span><br>
+          <span style="font-size:14px; color:#bbb;">Recife - PE</span>
+        </div>
+      </div>
+      <p style="color:#FFD700; margin-bottom:8px;">★★★★★</p>
+      <p style="font-size:15px; line-height:1.6;">Atendimento excelente! Consegui um chalé maravilhoso em Gravatá com preço ótimo. Super recomendo.</p>
+    </div>
+
+    <div style="background:#1c1c1c; padding:25px; border-radius:15px; width:320px; color:white; text-align:left; transition:0.3s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+      <div style="display:flex; align-items:center; gap:15px; margin-bottom:15px;">
+        <img src="https://randomuser.me/api/portraits/men/32.jpg" 
+             style="width:55px; height:55px; border-radius:50%; object-fit:cover;" 
+             alt="Cliente João">
+        <div>
+          <strong>João Andrade</strong> <span style="color:#00d084; font-size:13px;">✔ Verificado</span><br>
+          <span style="font-size:14px; color:#bbb;">Caruaru - PE</span>
+        </div>
+      </div>
+      <p style="color:#FFD700; margin-bottom:8px;">★★★★★</p>
+      <p style="font-size:15px; line-height:1.6;">Fechei hospedagem + passeio de quadriciclo. Experiência incrível, tudo organizado e seguro.</p>
+    </div>
+
+    <div style="background:#1c1c1c; padding:25px; border-radius:15px; width:320px; color:white; text-align:left; transition:0.3s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+      <div style="display:flex; align-items:center; gap:15px; margin-bottom:15px;">
+        <img src="https://randomuser.me/api/portraits/women/68.jpg" 
+             style="width:55px; height:55px; border-radius:50%; object-fit:cover;" 
+             alt="Cliente Fernanda">
+        <div>
+          <strong>Fernanda Lima</strong> <span style="color:#00d084; font-size:13px;">✔ Verificado</span><br>
+          <span style="font-size:14px; color:#bbb;">Jaboatão - PE</span>
+        </div>
+      </div>
+      <p style="color:#FFD700; margin-bottom:8px;">★★★★★</p>
+      <p style="font-size:15px; line-height:1.6;">Fui com meu esposo para um chalé romântico. Atendimento rápido pelo WhatsApp e tudo perfeito!</p>
+    </div>
+
+  </div>
+</section>
+
+</body>
+</html>
