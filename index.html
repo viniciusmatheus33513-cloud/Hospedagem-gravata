@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hospedagem Gravatá</title>
+  <style>
+    /* RESET E BASE */
+    * { margin:0; padding:0; box-sizing:border-box; }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      color:#fff;
+      /* Imagem de fundo corrigida para mobile */
+      background: #333 url('https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=1974&auto=format&fit=crop') no-repeat center center fixed;
+      background-size: cover;
+      min-height: 100vh;
+    }
+
+    /* Camada de escurecimento para ler o texto melhor */
+    body::before {
+      content:"";
+      position:fixed; /* Mudado para fixed para cobrir tudo */
+      top:0; left:0;
+      width:100%; height:100%;
+      background: rgba(0,0,0,0.65);
+      backdrop-filter: blur(3px);
+      z-index:-1;
+    }
+
+    header {
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      padding:15px 5%;
+      background: rgba(0,0,0,0.8);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .logo {
+      display:flex;
+      align-items:center;
+      gap:10px;
+    }
+
+    .logo img {
+      width:45px;
+      height:45px;
+      border-radius:50%;
+      object-fit:cover;
+      background:#fff;
+      padding:2px;
+    }
+
+    .logo h1 {
+      font-size:18px;
+      font-weight:bold;
+    }
+
+    .whatsapp-btn {
+      background:#25D366;
+      padding:8px 15px;
+      border-radius:8px;
+      text-decoration:none;
+      color:#fff;
+      font-weight:bold;
+      font-size: 14px;
+      transition:0.3s;
+      text-align: center;
+    }
+
+    .whatsapp-btn:hover { background:#1ebe5d; }
+
+    .hero {
+      text-align:center;
+      padding:80px 20px 40px;
+    }
+
+    .hero h2 {
+      font-size:32px;
+      margin-bottom:20px;
+      line-height: 1.2;
+    }
+
+    .hero p {
+      font-size:18px;
+      max-width:700px;
+      margin:0 auto 30px;
+    }
+
+    .section {
+      padding:40px 20px;
+      text-align:center;
+    }
+
+    .section h3 {
+      font-size:28px;
+      margin-bottom:30px;
+    }
+
+    .services {
+      display:flex;
+      justify-content:center;
+      flex-wrap:wrap;
+      gap:20px;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.95);
+      color:#333;
+      padding:25px;
+      border-radius:12px;
+      width:280px;
+      box-shadow:0 8px 20px rgba(0,0,0,0.3);
+    }
+
+    .card h4 {
+      margin-bottom:10px;
+      color:#2e7d32;
+      font-size: 20px;
+    }
+
+    .cta {
+      padding:60px 20px;
+      text-align:center;
+      background: rgba(0,0,0,0.7);
+    }
+
+    .cta a {
+      background:#25D366;
+      padding:14px 25px;
+      border-radius:10px;
+      color:#fff;
+      text-decoration:none;
+      font-weight:bold;
+      font-size:18px;
+      display: inline-block;
+      margin-top: 20px;
+    }
+
+    /* AJUSTES PARA CELULAR (RESPONSIVIDADE) */
+    @media(max-width:600px){
+      header {
+        flex-direction: column; /* Nome em cima, botão embaixo */
+        gap: 12px;
+        padding: 15px 10px;
+      }
+
+      .logo h1 {
+        font-size: 16px;
+      }
+
+      .whatsapp-btn {
+        width: 100%; /* Botão ocupa a largura toda no celular */
+        font-size: 13px;
+      }
+
+      .hero h2 { font-size:24px; }
+      
+      .card {
+        width: 100%; /* Cards ocupam a largura toda */
+        max-width: 320px;
+      }
+      
+      body {
+        /* Garante que o fundo não "pule" quando o navegador do celular esconde a barra de endereço */
+        background-attachment: scroll; 
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <img src="logo.png" alt="Logo Hospedagem Gravatá">
+      <h1>Hospedagem Gravatá</h1>
+    </div>
+    <a class="whatsapp-btn" href="https://wa.me/5581983633788" target="_blank">Atendimento pelo WhatsApp</a>
+  </header>
+
+  <section class="hero">
+    <h2>Encontre a melhor hospedagem em Gravatá - PE</h2>
+    <p>Trabalhamos com as melhores pousadas, chalés e hotéis da região.</p>
+  </section>
+
+  <section class="section">
+    <h3>Nossos Serviços</h3>
+    <div class="services">
+      <div class="card">
+        <h4>Pousadas</h4>
+        <p>Opções aconchegantes para casal ou família.</p>
+      </div>
+      <div class="card">
+        <h4>Chalés</h4>
+        <p>Conforto e privacidade em meio à natureza.</p>
+      </div>
+      <div class="card">
+        <h4>Hotéis</h4>
+        <p>Estrutura completa para sua estadia perfeita.</p>
+      </div>
+      <div class="card">
+        <h4>Aventura</h4>
+        <p>Passeio de Quadriciclo + Banho de Cachoeira.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <h3>Precisa de ajuda?</h3>
+    <p>Fale conosco agora e faça sua reserva.</p>
+    <a href="https://wa.me/5581983633788" target="_blank">Reservar agora</a>
+  </section>
+
+  <footer style="text-align:center; padding:20px; background:rgba(0,0,0,0.8); font-size:12px;">
+    © 2026 Hospedagem Gravatá
+  </footer>
+
+</body>
+</html>
